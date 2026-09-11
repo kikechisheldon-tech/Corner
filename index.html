@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Nicole's Little Corner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <div class="eyebrow">NICOLE'S LITTLE CORNER</div>
+    <h1>things to click.</h1>
+    <p>a collection of things that probably didn't need to exist.</p>
+  </div>
+  <button id="soundBtn" class="mini">sound: on</button>
+</header>
+
+<main>
+  <section class="notice">
+    <span>NO PARTICULAR PURPOSE</span><span id="foundCount">0 things found</span>
+  </section>
+
+  <section class="grid">
+    <button class="tile blue" data-open="illusion"><b>01</b><strong>LOOK AT THIS</strong><small>your eyes are about to lie to you.</small></button>
+    <button class="tile pink" data-open="reaction"><b>02</b><strong>HOW FAST ARE YOU?</strong><small>tap when the screen changes.</small></button>
+    <button class="tile yellow" data-open="memory"><b>03</b><strong>REMEMBER THESE</strong><small>you get about three seconds.</small></button>
+    <button class="tile green" data-open="science"><b>04</b><strong>WEIRD SCIENCE</strong><small>guess first. then find out.</small></button>
+    <button class="tile orange" data-open="obvious"><b>05</b><strong>DON'T TAP THIS</strong><small>seriously.</small></button>
+    <button class="tile black" data-open="soundtoy"><b>06</b><strong>MAKE A SOUND</strong><small>tiny little noise machine.</small></button>
+    <button class="tile white wide" data-open="surprise"><b>07</b><strong>SURPRISE ME</strong><small>no idea what you'll get.</small></button>
+    <button class="tile purple" data-open="secret"><b>08</b><strong>LOOK AROUND</strong><small>there might be something hidden.</small></button>
+  </section>
+
+  <section class="photo-strip">
+    <div class="photo-copy"><span>09</span><h2>oh, and these.</h2><p>because obviously I wasn't going to make this without putting you somewhere in it.</p></div>
+    <div class="photos">
+      <button class="photo" data-photo="1"><img src="https://files.catbox.moe/07siz8.jpg" alt="Nicole"></button>
+      <button class="photo photo-offset" data-photo="2"><img src="https://files.catbox.moe/fmd4oo.jpg" alt="Nicole"></button>
+    </div>
+  </section>
+
+  <section class="bottom-note"><span>there are things here that aren't buttons.</span><span>good luck.</span></section>
+</main>
+
+<div id="modal" class="modal" aria-hidden="true">
+  <div class="modal-card">
+    <button id="close" class="close">×</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+<div id="toast" class="toast"></div>
+<div id="egg" class="egg">you actually found this 😭</div>
+<script src="script.js"></script>
+</body>
+</html>
